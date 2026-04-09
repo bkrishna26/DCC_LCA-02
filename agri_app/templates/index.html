@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Agriculture App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>🌾 Smart Agriculture System</h1>
+    <p>Enter crop and soil details to get recommendations</p>
+
+    <form action="/predict" method="post">
+        <input type="text" name="crop" placeholder="Enter Crop (e.g., rice)" required>
+        <input type="text" name="soil" placeholder="Enter Soil Type (e.g., clay)" required>
+
+        <button type="submit">Get Suggestion</button>
+    </form>
+
+    {% if result %}
+        <div class="result">
+            <h2>{{ result }}</h2>
+        </div>
+    {% endif %}
+
+</body>
+</html>

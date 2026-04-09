@@ -158,7 +158,11 @@ A Smart Agriculture Web Application was developed to provide basic recommendatio
 
 ## Result
 
-The application is successfully deployed on the cloud and can be accessed through a web browser using a public URL.
+The application is successfully deployed on the cloud and can be accessed through a web browser using the following URL:
+
+Available at: https://agri-app-6qhc.onrender.com
+
+The application accepts user input (crop and soil type) and displays appropriate agricultural suggestions dynamically.
 
 ---
 

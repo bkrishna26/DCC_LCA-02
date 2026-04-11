@@ -1,0 +1,90 @@
+Enter number of processes: 5
+
+Enter status of each process (1 = Active, 0 = Failed):
+Process 1: 1
+Process 2: 0
+Process 3: 1
+Process 4: 0
+Process 5: 0
+
+--- MENU ---
+1. Display Processes
+2. Fail a Process
+3. Recover a Process
+4. Start Election
+5. Show Coordinator
+6. Exit
+Enter choice: 3
+Enter process number to recover: 
+5
+Process 5 has recovered.
+Recovered process has higher priority. Starting election...
+
+Process 5 is initiating election...
+
+>>> Process 5 becomes the COORDINATOR <<<
+
+--- MENU ---
+1. Display Processes
+2. Fail a Process
+3. Recover a Process
+4. Start Election
+5. Show Coordinator
+6. Exit
+Enter choice: 3
+Enter process number to recover: 4
+Process 4 has recovered.
+Recovered process has lower priority. No election needed.
+
+--- MENU ---
+1. Display Processes
+2. Fail a Process
+3. Recover a Process
+4. Start Election
+5. Show Coordinator
+6. Exit
+Enter choice: 2
+Enter process number to fail: 5
+Process 5 has failed.
+Coordinator failed! Detecting failure...
+Process 4 detects failure and starts election.
+
+Process 4 is initiating election...
+
+>>> Process 4 becomes the COORDINATOR <<<
+
+--- MENU ---
+1. Display Processes
+2. Fail a Process
+3. Recover a Process
+4. Start Election
+5. Show Coordinator
+6. Exit
+Enter choice: 1
+
+Process Status:
+Process 1: Active
+Process 2: Failed
+Process 3: Active
+Process 4: Active
+Process 5: Failed
+
+--- MENU ---
+1. Display Processes
+2. Fail a Process
+3. Recover a Process
+4. Start Election
+5. Show Coordinator
+6. Exit
+Enter choice: 5
+Current Coordinator is Process 4
+
+--- MENU ---
+1. Display Processes
+2. Fail a Process
+3. Recover a Process
+4. Start Election
+5. Show Coordinator
+6. Exit
+Enter choice: 6
+Exiting...

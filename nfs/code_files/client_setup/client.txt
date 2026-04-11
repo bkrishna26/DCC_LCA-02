@@ -1,0 +1,26 @@
+NFS CLIENT SETUP (Step-by-Step)
+
+1. Install NFS Client
+   sudo apt update
+   sudo apt install nfs-common -y
+
+2. Create Mount Directory
+   sudo mkdir -p /mnt/nfs_client
+
+3. Mount NFS Share
+   sudo mount <SERVER_IP>:/srv/nfs/shared /mnt/nfs_client
+
+Example:
+sudo mount 192.168.1.10:/srv/nfs/shared /mnt/nfs_client
+
+4. Make Mount Permanent
+   sudo nano /etc/fstab
+
+Add the following line:
+<SERVER_IP>:/srv/nfs/shared /mnt/nfs_client nfs defaults 0 0
+
+Example:
+192.168.1.10:/srv/nfs/shared /mnt/nfs_client nfs defaults 0 0
+
+5. Apply Changes
+   sudo mount -a

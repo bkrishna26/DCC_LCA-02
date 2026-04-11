@@ -1,0 +1,25 @@
+NFS VERIFICATION STEPS
+
+1. Go to Mounted Directory (Client Side)
+   cd /mnt/nfs_client
+
+2. Create File
+   touch test.txt
+
+3. Write Data
+   echo "Hello NFS" > test.txt
+
+4. Read File
+   cat test.txt
+
+If no error → NFS is working successfully
+
+5. Verify on Server Side (Optional)
+   cd /srv/nfs/shared
+   ls
+   cat test.txt
+
+You should see the same file created from client
+
+Conclusion:
+If file is visible and readable on both server and client → NFS setup is successful
